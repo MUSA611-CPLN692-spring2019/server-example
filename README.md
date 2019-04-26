@@ -25,11 +25,12 @@ Here's what it looks like, in full:
 Once these pieces are in place, we should be able to spin up the server
 and start querying the provided [census_tracts](census_tracts/) by typing:
 ```bash
-FLASK_RUN_HOST=0.0.0.0 FLASK_APP=serve.py flask run * Serving Flask app "serve.py"
+FLASK_RUN_HOST=0.0.0.0 FLASK_APP=serve.py flask run
 ```
 
 If successful, you'll see some startup messages like this:
 ```
+ * Serving Flask app "serve.py"
  * Environment: production
    WARNING: Do not use the development server in a production environment.
    Use a production WSGI server instead.
