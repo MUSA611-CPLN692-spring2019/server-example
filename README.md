@@ -34,9 +34,9 @@ If successful, you'll see some startup messages like this:
 ```
 
 To actually use the server, make requests against these endpoints:
-`localhost:5000/lt/{ID}` (return geojson for all OBJECTIDs less than `ID`)
-`localhost:5000/eq/{ID}` (return geojson for all OBJECTIDs equal to `ID`)
-`localhost:5000/gt/{ID}` (return geojson for all OBJECTIDs greater than `ID`)
+- `localhost:5000/lt/{ID}` (return geojson for all OBJECTIDs less than `ID`)
+- `localhost:5000/eq/{ID}` (return geojson for all OBJECTIDs equal to `ID`)
+- `localhost:5000/gt/{ID}` (return geojson for all OBJECTIDs greater than `ID`)
 
 ### Next Steps
 - The actual code in serve.py is fairly minimal but provides a few
