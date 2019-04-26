@@ -1,6 +1,8 @@
 ## A Simple, Queryable Vector Backend
 
+
 ### Setup
+
 To play around with this example, a couple prerequisites:
 1. You must have a working python installation with GDAL bindings. This
    can be tricky! Feel free to use a docker container or a python distribution
@@ -11,10 +13,12 @@ To play around with this example, a couple prerequisites:
    requests and serves responses.
 
 ### Data
+
 The data we will be querying is a census tracts shapefile (manually reprojected
 from EPSG:2272 to EPSG:4326 via QGIS, though you can do this programmatically!).
 Here's what it looks like, in full:
 ![census tracts](census_tracts.png "Census Tracts in QGIS")
+
 
 ### Running the Server
 
@@ -38,7 +42,9 @@ To actually use the server, make requests against these endpoints:
 - `localhost:5000/eq/{ID}` (return geojson for all OBJECTIDs equal to `ID`)
 - `localhost:5000/gt/{ID}` (return geojson for all OBJECTIDs greater than `ID`)
 
+
 ### Next Steps
+
 - The actual code in serve.py is fairly minimal but provides a few
   examples that each alter the SQL query very slightly. Try changing the
   SQL (open the shapefile in QGIS to investigate the properties available
@@ -49,6 +55,7 @@ To actually use the server, make requests against these endpoints:
 
 
 ### Further Reading
+
 Want to write code that manipulates GIS data? Check out
 [The OGR Cookbook](https://pcjericks.github.io/py-gdalogr-cookbook/)
 (we're mostly using the [vector
